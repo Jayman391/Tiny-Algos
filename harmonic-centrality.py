@@ -1,0 +1,1 @@
+harmonic_centrality = lambda G: [(1/(len(nx.nodes(G))-1)) * x for x in [np.sum(1 / np.array(list(list(nx.shortest_path_length(G))[i][1].values())) for i in range(len(list(nx.shortest_path_length(G)))))]] 
